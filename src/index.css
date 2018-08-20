@@ -1,0 +1,204 @@
+@import url('http://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:400,600,700,800&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Comfortaa';
+}
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.35em;
+}
+h4 {
+	font-size: 1.25em;
+}
+h5 {
+	font-size: 1.2em;
+}
+h6 {
+	font-size: 1em;
+}
+.noselected {
+	user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+.overflow-hidden {
+	overflow: hidden;
+}
+.overflow-hidden .sofQuestions__modalWindow {
+	overflow: auto;
+}
+.sofQuestionsRoot > table {
+	border-collapse: collapse;
+    margin: 3em auto;
+    width: 700px;
+    text-align: center;
+}
+.sofQuestionsRoot > table tbody tr:hover {
+	background-color: #f4f4f4;
+}
+.sofQuestionsRoot > table td {
+	border: 1px solid #dcdcdc;
+	padding: 10px;
+	cursor: pointer;
+	user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+.sofQuestionsRoot > table td:nth-child(1) {
+	width: 20%;
+	text-align: center;
+}
+.sofQuestionsRoot > table td:nth-child(2) {
+	width: 60%;
+	padding: 10px 20px;
+}
+.sofQuestionsRoot > table td:nth-child(3) {
+	width: 20%;
+	text-align: center;
+}
+.sofQuestionsRoot > table thead td {
+	font-weight: bold;
+}
+.sofQuestionsRoot > table tbody td {
+	text-align: left;
+	word-break: break-word;
+}
+.sofQuestions__modalWindow {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(50, 50, 50, 0.8);
+}
+.sofQuestions__modalWindow.active {
+	display: block;
+}
+.sofQuestions__modalWindow__body {
+	position: relative;
+	width: 700px;
+	background-color: #FFFFFF;
+	margin: 4em auto;
+}
+.sofQuestions__modalWindow__close {
+	position: absolute;
+	color: #a9a9a9;
+	font-size: 1.5em;
+	right: 0;
+	top: 0;
+	padding: 14px 16px;
+	cursor: pointer;
+}
+.sofQuestions__modalWindow__close:hover {
+	color: #717171;
+}
+.sofQuestions__modalWindow__content {
+	display: inline-block;
+	width: 100%;
+	margin: 20px auto auto;
+	padding: 2em 2em 0;
+	vertical-align: top;
+}
+
+.sofQuestions__modalWindow__content > h2 {
+	margin: 0.8em auto 1em;
+}
+.sofQuestions__modalWindow__content pre {
+	white-space: pre-wrap;
+	background-color: #eff0f1;
+	padding: 12px;
+}
+.sofQuestions__modalWindow__content pre > code {
+	color: #185592;
+	word-break: break-word;
+}
+.sofQuestions__modalWindow__content__text a {
+	color: #38a3ff;
+	word-break: break-word;
+}
+.sofQuestions__modalWindow__content__text a:hover {
+	text-decoration: none;
+}
+.sofQuestions__modalWindow__content__text img {
+	max-width: 100%;
+}
+.sofQuestions__modalWindow__content__text p {
+	line-height: 1.2em;
+}
+.sofQuestions__modalWindow__content__text p code {
+	color: #2a8ee4;
+    font-size: 1.2em;
+}
+.sofQuestions__modalWindow__link {
+    display: inline-block;
+	padding: 1em 2em 1.5em;
+    color: #4ba9fb;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+.sofQuestions__modalWindow__link:hover {
+    text-decoration: none;
+}
+.sof_change_language {
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	padding: 1em;
+	background-color: #f4f4f4;
+}
+.sof_change_language__lang {
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+	padding: 6px 12px;
+	cursor: pointer;
+}
+.sof_change_language__lang:last-of-type {
+	margin: 0;
+}
+.sof_change_language__lang.active {
+	background-color: #ffc150;
+}
+.sof_change_language__lang > sub {
+	display: block;
+	position: relative;
+	font-size: 10px;
+    vertical-align: bottom;
+    color: #a9a9a9;
+}
+.sof_change_language__lang.active sub {
+	color: #FFFFFF;
+}
+
+
+@media (min-width: 1100px) {
+	.sof_change_language {
+		top: 1em;
+		bottom: auto;
+		left: 1em;
+		right: auto;
+		background-color: transparent;
+	}
+	.sof_change_language__lang {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
