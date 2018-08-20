@@ -42,11 +42,15 @@ h6 {
 .overflow-hidden .sofQuestions__modalWindow {
 	overflow: auto;
 }
+.sofQuestionsRoot {
+	padding: 3em 0;
+}
 .sofQuestionsRoot > table {
 	border-collapse: collapse;
-    margin: 3em auto;
+    margin: auto;
     width: 700px;
     text-align: center;
+	font-size: 12px;
 }
 .sofQuestionsRoot > table tbody tr:hover {
 	background-color: #f4f4f4;
@@ -122,9 +126,9 @@ h6 {
 	margin: 0.8em auto 1em;
 }
 .sofQuestions__modalWindow__content pre {
-	white-space: pre-wrap;
 	background-color: #eff0f1;
 	padding: 12px;
+	overflow: auto;
 }
 .sofQuestions__modalWindow__content pre > code {
 	color: #185592;
@@ -197,7 +201,11 @@ h6 {
 	color: #FFFFFF;
 }
 
-
+@media (min-width: 600px) {
+	.sofQuestionsRoot > table {
+		font-size: 16px;
+	}
+}
 @media (min-width: 1100px) {
 	.sof_change_language {
 		top: 1em;
@@ -209,5 +217,23 @@ h6 {
 	.sof_change_language__lang {
 		display: block;
 		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.sofQuestionsRoot > table tbody td:nth-child(3) {
+		font-size: 10px;
+	}
+}
+@media (max-width: 760px) {
+	.sofQuestionsRoot {
+		padding: 3em 1.2em;
+	}
+	.sofQuestionsRoot > table,
+	.sofQuestions__modalWindow__body {
+		width: auto;
+	}
+	.sofQuestions__modalWindow__body {
+		margin: 4em 1.2em;
 	}
 }
