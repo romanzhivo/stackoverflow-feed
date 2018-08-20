@@ -166,7 +166,6 @@ class SOFTableBody extends React.Component {
 	
 	getCell(columns) {
 		var staticArray = columns;
-		//console.log('columns: ',columns)
 		return staticArray.map((a,b) => {
 			return <td key={b} dangerouslySetInnerHTML={{__html: a}}></td>;
 		});
