@@ -1,2 +1,5 @@
-# stackoverflow-feed
-The feed with new questions from stackoverflow.com / ru.stackoverflow.com
+## Лента вопросов с сайта stackoverflow.com / ru.stackoverflow.com
+
+Приложение подгружает в таблицу вопросы с англо- и русскоязычной версий сайта stackoverflow.com  
+в хронологическом порядке, начиная с новых. При клике на строку таблицы открывается  
+модальное окно с текстом вопроса и ссылкой на оригинал.
