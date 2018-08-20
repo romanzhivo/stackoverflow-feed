@@ -142,10 +142,19 @@ h6 {
 }
 .sofQuestions__modalWindow__content__text p {
 	line-height: 1.2em;
+	word-wrap: break-word;
 }
 .sofQuestions__modalWindow__content__text p code {
-	color: #2a8ee4;
+	color: #963000;
     font-size: 1.2em;
+    background-color: #eff0f1;
+    padding: 1px 5px;
+}
+.sofQuestions__modalWindow__content__text blockquote {
+	margin: 10px auto;
+	padding: 10px;
+	background-color: #ffeed5;
+	border-left: 2px solid #ff7d21;
 }
 .sofQuestions__modalWindow__link {
     display: inline-block;

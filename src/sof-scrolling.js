@@ -3,9 +3,9 @@ module.exports.scrollInit = function(getQuestions) {
 	
 	$(window).on('scroll', function() {
 		var docEl = $(document);
-		var windowEl = $(window);
+		var windowElRaw = window;
 		var docHeight = docEl.height();
-		var windowHeight = windowEl.height();
+		var windowHeight = windowElRaw.innerHeight;
 		var scrollTop = docEl.scrollTop();
 		var maxScrollTop = docHeight - windowHeight;
 		
