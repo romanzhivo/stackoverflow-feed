@@ -4,4 +4,4 @@
 в хронологическом порядке, начиная с новых. При клике на строку таблицы открывается  
 модальное окно с текстом вопроса и ссылкой на оригинал.
 
-<a href="http://code.romanzhivo.com/stackoverflow-feed">Работающий экземпляр</a>
+<a href="http://code.romanzhivo.com/stackoverflow-feed" target="_blank">Работающий экземпляр</a>
