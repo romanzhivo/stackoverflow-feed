@@ -100,6 +100,7 @@ class SOFTable extends React.Component {
 				linkName: status === 1 ? 'Ссылка на оригинал' : 'Link to original'
 			}
 		}), function() {
+			SOFRequests.abort();
 			this.getQuestions();	
 		});
 		
